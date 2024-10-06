@@ -1,0 +1,88 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+        <title>Markdown to HTML</title>
+        <style>
+            body {
+                box-sizing: border-box;
+                min-width: 200px;
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 45px;
+            }
+            .markdown-body {
+                box-sizing: border-box;
+                min-width: 200px;
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 30px;
+                border: 1px solid #e1e4e8;
+                border-radius: 6px;
+                background-color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <article class="markdown-body">
+            <hr />
+<h1>Markdown 转 HTML 转换器</h1>
+<p>这个仓库包含一个简单的 Python 应用程序，它将 Markdown 文件转换为美观的 HTML 页面，具有 GitHub 风格的主题。它使用 Flask 来提供一个轻量级的本地服务器，方便你在浏览器中预览转换后的 Markdown 文件。</p>
+<h2>功能</h2>
+<ul>
+<li><strong>Markdown 转 HTML</strong>：将 Markdown (<code>.md</code>) 文件转换为 HTML 格式，保留代码块并使用 Highlight.js 进行语法高亮。</li>
+<li><strong>GitHub 样式</strong>：应用 GitHub Markdown 样式，输出页面整洁美观，便于阅读。</li>
+<li><strong>简单易用</strong>：通过交互方式输入文件路径，并启动 Flask 服务器在浏览器中预览 HTML。</li>
+<li><strong>代码高亮</strong>：支持代码块的语法高亮，使用 Highlight.js 让代码展示更加专业。</li>
+</ul>
+<h2>使用方法</h2>
+<ol>
+<li>
+<p><strong>安装依赖</strong>：确保已安装 Flask 和 Python-Markdown，可以通过以下命令安装：
+    <code>sh
+    pip install Flask markdown</code></p>
+</li>
+<li>
+<p><strong>运行应用</strong>：使用以下命令启动程序：
+    <code>sh
+    python app.py</code></p>
+</li>
+<li>
+<p><strong>输入文件路径</strong>：程序会提示你输入需要转换的 Markdown 文件路径。你也可以指定输出的 HTML 文件名（可选）。</p>
+</li>
+<li>
+<p><strong>在浏览器中查看</strong>：转换完成后，应用会在 <code>http://localhost:5000</code> 提供生成的 HTML 文件，你可以在浏览器中查看和验证效果。</p>
+</li>
+</ol>
+<h2>示例</h2>
+<p>启动程序后，你会看到类似以下的提示：
+- "请输入 Markdown 文件路径:" （例如 <code>example.md</code>）
+- "请输入 HTML 输出文件路径（可选）:" （按回车键可使用默认输出文件）</p>
+<p>生成的 HTML 文件会有类似于 GitHub 上的 Markdown 风格，非常适合文档、项目报告或者便于分享的展示用途。</p>
+<h2>技术栈</h2>
+<ul>
+<li><strong>Flask</strong>：用于运行本地服务器，查看 HTML 文件。</li>
+<li><strong>Python-Markdown</strong>：将 Markdown 转换为 HTML。</li>
+<li><strong>Highlight.js</strong>：对代码块进行语法高亮。</li>
+<li><strong>GitHub CSS</strong>：提供 GitHub 风格的 Markdown 样式。</li>
+</ul>
+<h2>适用场景</h2>
+<ul>
+<li><strong>文档生成</strong>：快速将项目文档转换为 HTML 格式。</li>
+<li><strong>便捷分享</strong>：生成精美 HTML，便于分享，无需 Markdown 查看器。</li>
+<li><strong>本地预览</strong>：在发布前预览 Markdown 文件在 HTML 中的呈现效果。</li>
+</ul>
+<h2>贡献</h2>
+<p>欢迎提出问题或提交 Pull Request 来改进这个应用！无论是新功能、修复 Bug 还是优化代码，任何贡献都非常欢迎。</p>
+<h2>许可证</h2>
+<p>本项目采用 MIT 许可证进行授权。</p>
+        </article>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+    </html>
+    
